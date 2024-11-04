@@ -1,0 +1,79 @@
+#admin-panel {
+    display: flex;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #e9ecef;
+    
+    #menu {
+      width: 300px;
+      padding: 2rem;
+      
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        li {
+          padding: 1rem 0;   
+          font-size: 1.25rem;
+        }
+        a {
+          color: #212529;
+        }
+      }
+    }
+    #content {
+      flex: auto;
+      padding: 2rem;
+      background-color: #ffffff;
+      
+      .page-title {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 10px;
+    border: 1px solid black;
+    align-items: center;
+
+}
+
+.list p {
+    align-content: center;
+    padding: 4px 10px;
+}
+
+.deleteBtn{
+    background-color: transparent;
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+.deleteBtn a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.deleteBtn.edit {
+   background: blue;
+}
+
+.addBtn {
+    border: none;
+    background-color: blue;
+    padding: 4px 13px;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+.addBtn a {
+    text-decoration: none;
+    color: white;
+}

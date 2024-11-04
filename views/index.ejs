@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form action="/createSign" method="POST">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<h3 id="msg"><%= msg %></h3>
+					<% if(msg === 'Invalid Credentials'){%>
+						<p id="msgP">Pleas Create an account</p>
+					<%}%>
+					<input type="text" name="text" placeholder="User name" required>
+					<input type="email" name="email" placeholder="Email" required>
+					<input type="password" name="pswd" placeholder="Password" required>
+					<button>Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form action = "/verify" method="POST">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="text" name="text" placeholder="Name" required>
+					<input type="password" name="pswd" placeholder="Password" required>
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+</body>
+</html>
